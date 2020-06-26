@@ -40,13 +40,21 @@ To cite something you have to first add a citation to the bibliography.bib file 
 
 `@misc{ call_tag,`
 	`address = {Example Place},`
+	
 	`title = {Example Title},`
+	
 	`abstract = {Details of article you are referencing},`
+	
 	`booktitle = {Example Title},`
+	
 	`publisher = {Example Publisher},`
+	
 	`author = {Example Author},`
+	
 	`month = {Dec},`
+	
 	`year = {2017},`
+	
 	`file = {Example File Extension, to something like Zotero},
 }`
 
