@@ -38,24 +38,25 @@ To cite something you have to first add a citation to the bibliography.bib file 
 
 # Here is an example format for a citation in the bibliography file:
 
-`@misc{ call_tag,`
-	`address = {Example Place},`
+`@misc{ call_tag,
+
+	address = {Example Place},
 	
-	`title = {Example Title},`
+	title = {Example Title},
 	
-	`abstract = {Details of article you are referencing},`
+	abstract = {Details of article you are referencing},
 	
-	`booktitle = {Example Title},`
+	booktitle = {Example Title},
 	
-	`publisher = {Example Publisher},`
+	publisher = {Example Publisher},
 	
-	`author = {Example Author},`
+	author = {Example Author},
 	
-	`month = {Dec},`
+	month = {Dec},
 	
-	`year = {2017},`
+	year = {2017},
 	
-	`file = {Example File Extension, to something like Zotero},
+	file = {Example File Extension, to something like Zotero},
 }`
 
 # To add a citation to elements in your local directory:
