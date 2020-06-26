@@ -1,11 +1,11 @@
-## Purpose of this Repository:
+# Purpose of this Repository:
+This repository is intended as a template to standardize and ease the initialization process for Technical Reports.
 
-
-## How to Use this Template:
+# How to Use this Template:
 
 This repository serves as a template, for information on making and using a repository go to https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template.
 
-The overview of this process is:
+### The overview of this process is:
 
 1. Select the option to "Use this template," located next to the option to clone this repository.
 2. Name the repository, and select "Create repository from template."
@@ -15,7 +15,26 @@ The overview of this process is:
 	* Enter `git remote add upstream git@github.com:USERNAME/REPONAME`
 4. Now you can make edits and changes to the files on your device and push changes to your Github repository as with any other repository.
 
-## How to Initialize this repository:
+### Some initialization notes:
+If the make commands yield errors of:
+
+	`I found no \citation commands---while reading file title.aux`
+	
+	`I found no \bibdata command---while reading file title.aux`
+	
+	`I found no \bibstyle command---while reading file title.aux`
+
+Open the title.tex file and remove the % from infront of the lines
+
+	`%\input{main}`
+	
+	`%\bibliography{bibliography}{}`
+	
+	`%\bibliographystyle{unsrt}`
+	
+located at the bottom of the page. This will allow your main.tex file to compile and render into your title file. 
+
+# How to Initialize this repository:
 After you have cloned this repository, made your changes, and prepared 
 
 Run the command
@@ -33,11 +52,11 @@ For zip, insert `zip`.
 
 `make clean` or `make realclean`
 
-## Adding Citations:
+
+# Adding Citations:
 To cite something you have to first add a citation to the bibliography.bib file in your local directory.
 
 ### Here is an example format for a citation in the bibliography file:
-
 `
 @misc{ call_tag,
 
@@ -66,5 +85,7 @@ To cite something you have to first add a citation to the bibliography.bib file 
 
 `This sentence is used as an example citation call ~\cite{call_tag}.`
 
-## ARFC 
+
+# ARFC Manual
+
 http://arfc.npre.illinois.edu/manual/guides/writing/report
