@@ -21,6 +21,7 @@ After you have cloned this repository, made your changes, and prepared
 Run the command
 `make {insert type here}`
 
+
 For pdf, insert `all-via-pdf` or `all`.
 
 For dvi, insert `all-via-dvi`.
@@ -29,6 +30,10 @@ For epub, insert `epub`.
 
 For zip, insert `zip`.
 
+*Note: Do not include the {} from the make command line, replace the whole {insert type here} text with the command corresponding to the correct file type.*
+
+*Ex: To make as a pdf, the full command should be: `make all-via-pdf`*
+
 ### To clean your local directory run:
 
 `make clean` or `make realclean`
@@ -36,19 +41,19 @@ For zip, insert `zip`.
 ### Some initialization notes:
 If the make commands yield errors of:
 
-	`I found no \citation commands---while reading file title.aux`
+	I found no \citation commands---while reading file title.aux
 	
-	`I found no \bibdata command---while reading file title.aux`
+	I found no \bibdata command---while reading file title.aux
 	
-	`I found no \bibstyle command---while reading file title.aux`
+	I found no \bibstyle command---while reading file title.aux
 
 Open the title.tex file and remove the % from infront of the lines
 
-	`%\input{main}`
+	%\input{main}
 	
-	`%\bibliography{bibliography}{}`
+	%\bibliography{bibliography}{}
 	
-	`%\bibliographystyle{unsrt}`
+	%\bibliographystyle{unsrt}
 	
 located at the bottom of the page. This will allow your main.tex file to compile and render into your title file. 
 
@@ -58,35 +63,37 @@ located at the bottom of the page. This will allow your main.tex file to compile
 To cite something you have to first add a citation to the bibliography.bib file in your local directory.
 
 ### Here is an example format for a citation in the bibliography file:
-`
-@misc{ call_tag,
 
-	address = {Example Place},
+	@misc{ call_tag,
 
-	title = {Example Title},
-	
-	abstract = {Details of article you are referencing},
-	
-	booktitle = {Example Title},
-	
-	publisher = {Example Publisher},
-	
-	author = {Example Author},
-	
-	month = {Dec},
-	
-	year = {2017},
-	
-	file = {Example File Extension, to something like Zotero},
+		address = {Example Place},
 
-}
-`
+		title = {Example Title},
+
+		abstract = {Details of article you are referencing},
+
+		booktitle = {Example Title},
+
+		publisher = {Example Publisher},
+
+		author = {Example Author},
+
+		month = {Dec},
+
+		year = {2017},
+
+		file = {Example File Extension, to something like Zotero},
+
+	}
+
 
 ### To add a citation to elements in your local directory:
 
-`This sentence is used as an example citation call ~\cite{call_tag}.`
+	This sentence is used as an example citation call ~\cite{call_tag}.
+
+An important note is that the citation is made with what the example called "call_tag." The first line in the example bibliography.bib code contains this tag, and connects the content to the Reference section that will be generated in the document.
 
 
-# ARFC Manual
-
+# ARFC Report Manual
+For ARFC specific guidelines for making a report, read the specifics at
 http://arfc.npre.illinois.edu/manual/guides/writing/report
