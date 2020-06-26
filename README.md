@@ -97,3 +97,4 @@ An important note is that the citation is made with what the example called "cal
 # ARFC Report Manual
 For ARFC specific guidelines for making a report, read the specifics at
 http://arfc.npre.illinois.edu/manual/guides/writing/report
+
