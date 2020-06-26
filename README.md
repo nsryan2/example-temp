@@ -29,14 +29,14 @@ For epub, insert `epub`.
 
 For zip, insert `zip`.
 
-# To clean your local directory run:
+### To clean your local directory run:
 
 `make clean` or `make realclean`
 
 ## Adding Citations:
 To cite something you have to first add a citation to the bibliography.bib file in your local directory.
 
-# Here is an example format for a citation in the bibliography file:
+### Here is an example format for a citation in the bibliography file:
 
 `
 @misc{ call_tag,
@@ -62,7 +62,7 @@ To cite something you have to first add a citation to the bibliography.bib file 
 }
 `
 
-# To add a citation to elements in your local directory:
+### To add a citation to elements in your local directory:
 
 `This sentence is used as an example citation call ~\cite{call_tag}.`
 
