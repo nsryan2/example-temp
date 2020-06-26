@@ -1,5 +1,5 @@
 # Purpose of this Repository:
-This repository is intended as a template to standardize and ease the initialization process for Technical Reports.
+This repository is intended as a template to standardize and ease the initialization process for Technical Reports from members of the Advanced Reactors and Fuel Cycles group at the University of Illinois at Urbana-Champaign. While this version of the template is geared towards an ARFC Member's report, it can be adapted to any individual's needs.
 
 # How to Use this Template:
 
@@ -14,6 +14,24 @@ This repository serves as a template, for information on making and using a repo
 	* Enter `git clone git@github.com:USERNAME/REPONAME`. Where USERNAME and REPONAME are replaced respectively by your github account's username and the name you chose to give this repository.
 	* Enter `git remote add upstream git@github.com:USERNAME/REPONAME`
 4. Now you can make edits and changes to the files on your device and push changes to your Github repository as with any other repository.
+
+# How to Initialize this repository:
+After you have cloned this repository, made your changes, and prepared 
+
+Run the command
+`make {insert type here}`
+
+For pdf, insert `all-via-pdf` or `all`.
+
+For dvi, insert `all-via-dvi`.
+
+For epub, insert `epub`.
+
+For zip, insert `zip`.
+
+### To clean your local directory run:
+
+`make clean` or `make realclean`
 
 ### Some initialization notes:
 If the make commands yield errors of:
@@ -34,23 +52,6 @@ Open the title.tex file and remove the % from infront of the lines
 	
 located at the bottom of the page. This will allow your main.tex file to compile and render into your title file. 
 
-# How to Initialize this repository:
-After you have cloned this repository, made your changes, and prepared 
-
-Run the command
-`make {insert type here}`
-
-For pdf, insert `all-via-pdf` or `all`.
-
-For dvi, insert `all-via-dvi`.
-
-For epub, insert `epub`.
-
-For zip, insert `zip`.
-
-### To clean your local directory run:
-
-`make clean` or `make realclean`
 
 
 # Adding Citations:
